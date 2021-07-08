@@ -5,30 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
     <title>Help My Maths</title>
 
     <!-- Personal CDN for font awesome -->
     <script src="https://kit.fontawesome.com/37c2631073.js" crossorigin="anonymous"></script>
 
 </head>
-
-<header>
-    <div class="header">
-        <a href="" class="logo">Help My Maths</a>
-        <div class="header-right">
-            <a href="">Call</a>
-            <a href="">Email</a>
-        </div>
-    </div>
-    <nav class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fas fa-book-open"></i> About</a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-    </nav>
-</header>
 <body>
+    <noscript>
+        <div>The website relies on Javascript, please turn it on</div>
+    </noscript>
+
+    <header>
+        <div class="header">
+            <a href="" class="logo">Help My Maths</a>
+            <div class="header-right">
+                <nav class="navbar">
+                    <div>
+                        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                        <a href="#"><i class="fas fa-book-open"></i> About</a>
+                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="homepage_hero">
+            <h1>KS1, KS2 and GCSE MATHS TUTORING</h1>
+            <a href="" class="homepage_register_button">Register Interest</a>
+        </div>
+
+
+    </main>
+
+    <div class="container">
+        <form action="action_page.php">
+            
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
     
+    <footer id="footer">
+        
+    </footer>
+
+    <script src="./app.js"></script>
+
 </body>
 </html>
